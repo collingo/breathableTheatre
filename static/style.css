@@ -27,6 +27,7 @@ body,
 }
 .swipe-wrap > div img {
 	width:100%;
+	display:block;
 }
 .scroll,
 .scroll-wrap {
