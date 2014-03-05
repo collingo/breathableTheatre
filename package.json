@@ -4,9 +4,9 @@
   "author": "Nick Collings",
   "preferGlobal": false,
   "devDependencies": {
+    "connect": "~2.13.1"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": {
     "start": "node server.js"
   },

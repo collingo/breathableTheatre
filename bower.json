@@ -1,0 +1,6 @@
+{
+  "name": "Breathable",
+  "dependencies": {
+    "swipe": "~2.0.0"
+  }
+}
