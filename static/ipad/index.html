@@ -7,12 +7,29 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>Breathe.Able</title>
 	<link rel="stylesheet" href="../style.css">
+	<style>
+		img.hide {
+			display:none;
+		}
+	</style>
 </head>
 <body>
-	<div class="scroll">
+	<div id="toggle" class="scroll">
 		<div class="scroll-wrap">
-			<img src="../img/image1.png">
+			<img src="../img/shared-screen_02-white.jpg">
+			<img class="hide" src="../img/shared-screen_02-white-overlay.jpg">
 		</div>
 	</div>
+	<script>
+		console.log(document.querySelectorAll('img'));
+		function toggle() {
+			for (var i = document.querySelectorAll('img').length - 1; i >= 0; i--) {
+				document.querySelectorAll('img')[i].classList.toggle('hide');
+			};
+		}
+		document.getElementById("toggle").onclick = function() {
+			toggle();
+		};
+	</script>
 </body>
 </html>
